@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sho-pdao" />
+        <module name="shop-cache" />
+        <module name="shop-core" />
+        <module name="shop-dao" />
+        <module name="shop-service" />
+        <module name="shop-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sho-pdao" target="1.5" />
+      <module name="shop-cach" target="1.8" />
+      <module name="shop-cache" target="1.8" />
+      <module name="shop-core" target="1.8" />
+      <module name="shop-core (1)" target="1.5" />
+      <module name="shop-dao" target="1.8" />
+      <module name="shop-parent" target="1.8" />
+      <module name="shop-service" target="1.8" />
+      <module name="shop-web" target="1.8" />
+      <module name="shop-www" target="1.5" />
+      <module name="shops-ervice" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
