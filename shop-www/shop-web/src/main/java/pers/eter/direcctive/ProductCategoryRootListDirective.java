@@ -17,7 +17,7 @@ import java.util.Map;
  * Created by Eter on 17-6-9.
  */
 @Component
-public class productCategoryRootListDirective extends BaseDirective {
+public class ProductCategoryRootListDirective extends BaseDirective {
     @Resource
     private ProductCategoryService productCategoryService;
 

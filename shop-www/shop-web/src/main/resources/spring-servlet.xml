@@ -20,8 +20,9 @@
     <!-- 静态资源文件的处理 二
     <mvc:resources mapping="/css/**" location="/css/" />-->
 
-    <!-- 引入jdbc.properties属性文件方便数据源的配置 -->
-    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--<context:property-placeholder location="classpath:jdbc.properties"/>-->
+    <!-- 引入jdbc.properties等属性文件方便数据源的配置 -->
+    <context:property-placeholder location="classpath:*.properties"/>
 
     <!-- 扫描package方便注解依赖注入-->
     <context:component-scan base-package="pers.eter"/>
@@ -62,6 +63,9 @@
                 <entry key="hello" value-ref="helloDirective"/>
                 <entry key="navigation_list" value-ref="navigationDirective"/>
                 <entry key="hot_search_keywords" value-ref="hotSearchKeywordsDirective"/>
+                <entry key="product_category_root_list" value-ref="productCategoryRootListDirective"/>
+                <entry key="product_category_children_list" value-ref="productCategoryChildrenListDirective"/>
+                <entry key="brand_list" value-ref="brandListDirective"/>
             </map>
         </property>
 
@@ -71,9 +75,6 @@
 
             <map>
                 <entry key="hello" value-ref="helloDirective" />
-                <entry key="product_category_root_list" value-ref="productCategoryRootListDirective" />
-                <entry key="product_category_children_list" value-ref="productCategoryChildrenListDirective" />
-                <entry key="brand_list" value-ref="brandListDirective" />
                 <entry key="promotion_list" value-ref="promotionListDirective" />
                 <entry key="ad_position" value-ref="adPositionDirective" />
                 <entry key="article_category_root_list" value-ref="articleCategoryRootListDirective" />
